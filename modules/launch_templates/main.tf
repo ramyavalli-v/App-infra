@@ -1,7 +1,8 @@
 resource "aws_launch_template" "this" {
   name_prefix   = var.name_prefix
   image_id      = var.ami
-  instance_type = var.instance_type
+  ##instance_type = var.instance_type
+  instance_type = "t2.micro" 
 
   key_name = var.key_name
 
