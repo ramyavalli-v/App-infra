@@ -171,7 +171,7 @@ module "app_sg" {
       from_port       = 80
       to_port         = 80
       protocol        = "tcp"
-      referenced_sg_id = module.alb_sg.security_group_id
+      referenced_security_group_id = module.alb_sg.security_group_id
     }
     ssh = {
       description = "Allow SSH"
